@@ -1,7 +1,7 @@
 {
   "name": "silvia-potente-jewellery",
   "version": "1.0.0",
-  "description": "Contemporary handcrafted jewellery - Bespoke luxury jewellery design studio",
+  "description": "Luxury bespoke jewellery website for Silvia Potente",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,20 +10,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
     "next": "^14.0.0",
-    "framer-motion": "^10.16.4",
-    "tailwindcss": "^3.3.5",
-    "typescript": "^5.2.2"
+    "framer-motion": "^10.16.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.5",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.47.0",
-    "eslint-config-next": "^14.0.0",
-    "postcss": "^8.4.28"
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   }
 }
