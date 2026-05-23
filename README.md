@@ -1,158 +1,66 @@
-# Silvia Potente Jewellery - Luxury Bespoke Website
+# Silvia Potente Jewellery Website
 
-## Overview
+A luxury, bespoke jewellery website built with Next.js 14, React, TypeScript, Tailwind CSS, and Framer Motion.
 
-A production-ready luxury jewellery website built with modern web technologies. This site showcases handcrafted, bespoke jewellery with an emphasis on craftsmanship, elegance, and contemporary design.
+## Features
+
+- 🎨 Elegant, minimal luxury design
+- ✨ Smooth animations with Framer Motion
+- 📱 Fully responsive and mobile-first
+- ♿ Accessibility-friendly (WCAG 2.1)
+- 🔍 SEO optimized
+- 🛒 Stripe integration ready (structure prepared, not implemented)
+- 📐 Art Deco & Cubism inspired design
+- 🌊 Ocean-toned color palette
 
 ## Tech Stack
 
-- **Framework**: Next.js 14+
-- **React**: 18.3+
-- **TypeScript**: Full type safety
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **SEO**: Next.js optimizations with metadata
-- **Accessibility**: WCAG 2.1 AA compliant
+- **Next.js 14** - React framework
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Advanced animations
+- **React** 18.2 - UI library
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to see the website.
 
 ## Project Structure
 
 ```
-.
-├── app/                 # Next.js app directory
-│   ├── layout.tsx      # Root layout
-│   ├── page.tsx        # Home page
-│   ├── about/
-│   ├── bespoke/
-│   ├── remodels/
-│   ├── repairs/
-│   ├── manufacturing/
-│   ├── shop/
-│   ├── gallery/
-│   ├── contact/
-│   ├── care/
-│   ├── warranty/
-│   ├── sustainability/
-│   └── privacy/
-├── components/          # Reusable React components
-│   ├── Navigation.tsx
-│   ├── Footer.tsx
-│   ├── Hero.tsx
-│   └── ...
-├── styles/             # Global styles
-├── services/           # Business logic & API calls
-│   └── stripe/        # Stripe integration stubs
-├── data/              # Static data & content
-├── utils/             # Helper functions
-├── hooks/             # Custom React hooks
-├── types/             # TypeScript type definitions
-└── public/            # Static assets
+/app                  # Next.js app directory (pages & layouts)
+  /components         # Page-level components
+  /api                # API routes (future Stripe webhooks)
+/components           # Reusable UI components
+/styles               # Global styles
+/services             # Business logic (Stripe service stubs)
+/data                 # Static content & constants
+/public               # Static assets (logos, images)
 ```
 
 ## Brand Colors
 
-- **Driftwood**: #746661
-- **Duck Egg**: #B1E4E3
-- **Jade**: #00B2A9
-- **French Navy**: #1F2A44
-- **Desert Fawn**: #C4BCB7
-- **Midnight Black**: #000000
-- **White**: #FFFFFF
+- **Driftwood** - #746661
+- **Duck Egg** - #B1E4E3
+- **Jade** - #00B2A9
+- **French Navy** - #1F2A44
+- **Desert Fawn** - #C4BCB7
+- **Midnight Black** - #000000
+- **Ivory White** - #FFFFFF
 
-## Typography
+## Future Integration
 
-- **Headings**: Montserrat Bold
-- **Body**: Montserrat Light
-- Emphasis on spacious, elegant layouts
+- Stripe payment processing
+- CMS integration (Sanity / Contentful)
+- Image optimization service
+- Email notifications
+- Analytics & tracking
 
-## Features
+## Development Notes
 
-- ✅ Responsive mobile-first design
-- ✅ Smooth scroll animations
-- ✅ Luxury cinematic hero sections
-- ✅ SEO optimized metadata
-- ✅ Accessibility (ARIA, semantic HTML)
-- ✅ Image optimization & lazy loading
-- ✅ Dark luxury aesthetic
-- ✅ Future Stripe integration ready
-- ✅ CMS-ready data architecture
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Installation
-
-```bash
-# Clone repository
-git clone https://github.com/easywebsiteco/silvia-potente-jewellery.git
-cd silvia-potente-jewellery
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Visit `http://localhost:3000`
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## Stripe Integration
-
-Stripe integration is prepared but not fully implemented. See `/services/stripe/` for:
-- Payment processing stubs
-- Deposit calculations
-- Gift voucher structure
-- TODO comments for implementation
-
-## Future Enhancements
-
-- [ ] CMS Integration (Sanity/Contentful)
-- [ ] Full Stripe checkout
-- [ ] Email notifications
-- [ ] Analytics & tracking
-- [ ] Blog system
-- [ ] Customer portal
-
-## Code Standards
-
-- TypeScript for all components
-- Functional components with hooks
-- Reusable component patterns
-- Clear naming conventions
-- Comprehensive comments
-- Mobile-first responsive design
-
-## Accessibility
-
-This site follows WCAG 2.1 AA standards:
-- Semantic HTML structure
-- ARIA labels where needed
-- Keyboard navigation support
-- Color contrast compliance
-- Focus management
-
-## SEO
-
-- Open Graph metadata
-- Structured data (JSON-LD)
-- Meta descriptions
-- Semantic HTML
-- Sitemap ready
-
-## License
-
-Private project for Silvia Potente Jewellery
-
-## Contact
-
-For inquiries: contact@silviapotente.com
+See comments marked with `TODO: Stripe Integration` for payment processing setup points.

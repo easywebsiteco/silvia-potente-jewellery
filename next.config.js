@@ -1,32 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
   images: {
-    domains: ['images.unsplash.com', 'cdn.sanity.io'],
-    formats: ['image/avif', 'image/webp'],
+    domains: ['images.unsplash.com', 'via.placeholder.com'],
+    formats: ['image/webp', 'image/avif'],
   },
-  headers: async () => {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on',
-          },
-          {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-        ],
-      },
-    ];
-  },
+  // Future CMS integration placeholder
+  // FUTURE: Integrate with Sanity or Contentful
+  // env: {
+  //   NEXT_PUBLIC_SANITY_PROJECT_ID: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  //   NEXT_PUBLIC_SANITY_DATASET: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  // },
 };
 
 module.exports = nextConfig;
